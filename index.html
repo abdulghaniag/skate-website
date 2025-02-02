@@ -9,7 +9,12 @@
 <style>
     .container-fluid{
         margin-top: -8px;
-
+    }
+    .navbar{
+        background-color: rgb(42, 40, 40) !important;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
     }
     .navbar-nav{
         width: 50%;
@@ -34,10 +39,18 @@
         font-size: x-large;
         color: rgb(236, 164, 29);
     }
-    .carousel-item  img{
+    .carousel-inner{
+        width: 100%;
+        height: 700px;
+        background-color: antiquewhite;
+        /* padding: 100px; */
+    }
+    .carousel-item img{
 width: 100%;
-height: 80vh;
-
+height: 700px;
+padding-top: 90px;
+/* border: 5px solid red; */
+/* padding-top:  100px !important; */
     }
     .carousel-caption h5{
         margin-top: -400px;
@@ -67,15 +80,17 @@ font-size: 5cap;
     .card{
         width: 350px !important;
         height: 300px;
-        /* background-color: black; */
-        background-color: rgb(69, 68, 68);
+        background-color: rgb(42, 40, 40);
+
 border: none;
 
     }
     .card p{
+        padding-top: 15px;
         color: gray;
     }
     .card h5{
+        font-size: 2.5cap;
         color: white;
     }
     .cardthree{
@@ -101,7 +116,9 @@ border: none;
         /* border: 2px solid rebeccapurple; */
     }
     .section2{
-        background-color: rgb(69, 68, 68);
+        /* background-color: rgb(69, 68, 68); */
+        background-color: rgb(42, 40, 40);
+
     }
     .navbar{
         background-color: rgb(69, 68, 68);
@@ -151,7 +168,9 @@ padding-right: 30px;
         display: flex;
         background-color: ;
         justify-content: space-between;
-        background-color: rgb(69, 68, 68);
+        /* background-color: rgb(69, 68, 68); */
+        background-color: rgb(42, 40, 40);
+
 padding-top: 100px;
     }
     .righttext2{
@@ -195,9 +214,8 @@ padding-right: 30px;
     }
     .cardpic2{
         display: flex;
-        /* background-color: ; */
-        /* justify-content: space-between; */
-        background-color: rgb(69, 68, 68);
+        background-color: rgb(42, 40, 40);
+
 padding-top: 10px;
     }
     .numbers{
@@ -207,7 +225,9 @@ padding-top: 10px;
         display: flex;
         justify-content: space-evenly;
         /* background-color: rgb(69, 68, 68); */
-        background-color: rgb(47, 45, 45);
+        /* background-color: rgb(47, 45, 45); */
+        background-color: rgb(42, 40, 40);
+
 
     }
     .count{
@@ -226,7 +246,8 @@ padding-top: 10px;
         text-align: center;
         padding-top: 150px;
         /* background-color: rgb(69, 68, 68); */
-        background-color: rgb(47, 45, 45);
+        /* background-color: rgb(47, 45, 45); */
+        background-color: rgb(42, 40, 40);
 
     }
     .our h2{
@@ -242,7 +263,9 @@ padding-top: 10px;
         width: 100%;
         height: 400px;
         /* background-color: rgb(69, 68, 68); */
-        background-color: rgb(47, 45, 45);
+        /* background-color: rgb(47, 45, 45); */
+        background-color: rgb(42, 40, 40);
+        
 
 
     }
@@ -269,6 +292,7 @@ padding-top: 10px;
         border: 2px saddlebrown;
         height: 300px;
         background-color: rgb(84, 83, 81);
+    
     }
     .threeicon{
         /* padding-left: 20px; */
@@ -284,14 +308,14 @@ padding-top: 10px;
         display: flex;
         padding-left: 150px;
         width: 100%;
-        background-color: rgb(47, 45, 45);
-        height: 80vh;
+        background-color: rgb(42, 40, 40);
+        height: 100vh;
         
     }
     .basic{
     margin-left: 30px;
 padding-top: 30px;
-background-color: rgb(84, 83, 81);
+background-color: rgb(52, 52, 49);
         width: 360px;
         height: 600px;
     }
@@ -303,7 +327,7 @@ background-color: rgb(84, 83, 81);
     .basic h3{
         padding-top: 10px;
         text-align: center;
-        font-size: 3.5cap;
+        font-size: 4.5cap;
         color: orange;
     }
     .basic span{
@@ -332,10 +356,16 @@ font-size: large;
         margin-left: 100px;
         border: none;
         color: white;
-        background-color: rgb(185, 180, 180);
+        background-color: rgb(104, 102, 102);
         border-radius: 10px;
         width: 120px;
         height: 50px;
+    }
+    .buy:hover{
+        background-color: rgb(190, 180, 180);
+    }
+    .buy2:hover{
+        background-color: rgb(205, 155, 62);
     }
     .buy2{
         margin-top: 20px;
@@ -346,6 +376,89 @@ font-size: large;
         border-radius: 10px;
         width: 120px;
         height: 50px;
+    }
+    .asksection{
+        width: 100%;
+        height: 90vh;
+        display: flex ;
+        background-color: rgb(42, 40, 40);
+    }
+    
+    .leftask{
+        /* margin-top: 150px; */
+        width: 50%;
+        height: 80vh;
+        background-color: rgb(42, 40, 40);
+        
+    }
+    .ask1{
+        margin-left: 200px;
+        width: 80%;
+    }
+    .ask1 h3{
+        margin-top: 30px;
+font-weight: 600;
+        font-size: 2cap;
+        color: orange;
+    }
+    .ask1 p{
+        margin-top: 30px;
+        color: rgb(128, 127, 127);
+        font-weight: 500;
+    }
+    .righttask{
+        /* margin-top: 80px; */
+        width: 50%;
+        height: 80vh;
+        background-color: rgb(42, 40, 40);
+
+    }
+    .free{
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        background-color: antiquewhite;
+        background-color: rgb(42, 40, 40);
+        /* border: 5px solid red; */
+    }
+    .free h2{
+        font-size: 3cap;
+        color: orange;
+        
+    }
+    .test{
+
+        width: 100%;
+        height: 100px;
+        background-color: rgb(42, 40, 40);
+        color: orange;
+        text-align: center;
+    }
+    .kenpic img{
+        width: 100px;
+        border-radius: 50px;
+        margin-left: 120px;
+        margin-top: 20px;
+
+    }
+    .kenpic h5{
+        padding-top: 20px;
+        margin-left: 120px;
+
+    }
+    .Testimonialsection{
+        width: 100%;
+        height: 100vh;
+        background-color: aqua;
+    }
+    .cardken{
+        width: 22%;
+        height: 500px;
+        background-color: antiquewhite;
+    }
+    .kentext p{
+        padding: 20px;
+
     }
 </style>
 </head>
@@ -594,7 +707,7 @@ Minus perspiciatis ullam itaque voluptas iure <br> vero, nesciunt unde odit aspe
 </div>
 <div class="basic">
     <h2>Basic</h2>
-    <h3>$47 <span>/ year</span></h3>
+    <h3>$200 <span>/ year</span></h3>
    <ul>
        <li><i class="fa-solid fa-check"></i><p>Officia quaerat eaque neque</p></li>
        <li><i class="fa-solid fa-check"></i><p>Possimus aut consequuntur <br> incidunt</p></li>
@@ -606,7 +719,7 @@ Minus perspiciatis ullam itaque voluptas iure <br> vero, nesciunt unde odit aspe
    </div>
    <div class="basic">
     <h2>Basic</h2>
-    <h3>$47 <span>/ year</span></h3>
+    <h3>$750 <span>/ year</span></h3>
    <ul>
        <li><i class="fa-solid fa-check"></i><p>Officia quaerat eaque neque</p></li>
        <li><i class="fa-solid fa-check"></i><p>Possimus aut consequuntur <br> incidunt</p></li>
@@ -616,12 +729,99 @@ Minus perspiciatis ullam itaque voluptas iure <br> vero, nesciunt unde odit aspe
    </ul>
    <button class="buy">Buy Now</button>
    </div>
+</div>
+
+<div class="free">
+    <h2>Frequently Ask Questions</h2>
+</div>
+
+
+
+<div class="asksection">
+<div class="leftask">
+<div class="ask1">
+<h3>Can I accept both Paypal and Stripe?</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam<br> assumenda eum blanditiis perferendis.</p>
+</div>
+
+<div class="ask1">
+<h3>What available is refund period?</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam <br>assumenda eum blanditiis perferendis.</p>
+</div>
+
+<div class="ask1">
+<h3>Can I accept both Paypal and Stripe?</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam <br> assumenda eum blanditiis perferendis.</p>
+</div>
+
+<div class="ask1">
+<h3>What available is refund period?</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam <br> assumenda eum blanditiis perferendis.</p>
+</div>
+
+</div>
+
+
+
+
+
+<div class="righttask">
+    <div class="ask1">
+    <h3>Can I accept both Paypal and Stripe?</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam<br> assumenda eum blanditiis perferendis.</p>
+    </div>
+    
+    <div class="ask1">
+    <h3>What available is refund period?</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam <br>assumenda eum blanditiis perferendis.</p>
+    </div>
+    
+    <div class="ask1">
+    <h3>Can I accept both Paypal and Stripe?</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam <br> assumenda eum blanditiis perferendis.</p>
+    </div>
+    
+    <div class="ask1">
+    <h3>What available is refund period?</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam <br> assumenda eum blanditiis perferendis.</p>
+    </div>
+
+    </div>
+</div>
+</div>
+
+
+
+
+<div class="test">
+    <h2>TESTIMONIAL</h2>
+</div>
+<div class="Testimonialsection">
+<div class="cardken">
+<div class="kenpic"><img src="image/person_1.jpg" alt="">
+<h5>KEN DAVIS</h5>
+</div>
+<div class="kentext">
+<p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad at mollitia aliquid commodi sequi ducimus. Voluptates vero eveniet iste blanditiis quia natus odit quisquam inventore dicta illum! Inventore, amet maxime."</p>
+</div>
+
+</div>
+
+
+
+
+
+
 
 
 
 
 
 </div>
+
+
+
+
 
 
 
